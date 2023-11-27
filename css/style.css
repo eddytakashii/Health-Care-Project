@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    color: white;
+    font-family: poppins, arial, sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 130vh;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/img/test_newlogo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+nav{
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:"";
+    width:0%;
+    height: 2px;
+    background-color: #3fbda8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.title{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:70px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#3fbda8,#3fbda8);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -800px 0;
+    animation: backcolor 10s linear infinite alternate;
+    text-align: center;
+}
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+header{
+    margin: 0px 50px;
+}
+
+.logo{
+    background-image: url(/img/Logo.png);
+}
+  
+.custom-btn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px; 
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 60px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    margin-top: 30px;
+  }
+
+  .custom-btn:hover {
+    color: #3fbda8; /* Mudança da cor do texto no hover */
+    border-color: #3fbda8; /* Mudança da cor da borda no hover */
+  }
+
+
+  .barra-horizontal{
+    background-color:rgba(12, 20, 12, 0.719);
+    width: 100%;
+    height:90px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    top: 575px;
+    display: flex;
+}
+
+.card-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #3fbda8;
+}
+
+.card-body h4{
+    margin:40px;
+}
+
+
+.botao{
+    position: relative;
+    left:6px;
+    bottom: 3px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; 
+    background-color: rgba(0,0,0,0.3);
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    padding: 0px 60px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.botao a{
+font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+h5{
+    margin: 0px;
+}
+.rodape {
+    display: flex;
+    flex-direction: row; /* Mudança para row para alinhar os elementos lado a lado */
+    justify-content: space-evenly; /* Distribui os elementos horizontalmente */
+    align-items: center;
+}
+
+.faleconosco {
+    width: 60%; /* Ajuste para ocupar 60% da largura do rodapé */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.grupo {
+    width: 30%; /* Ajuste para ocupar 30% da largura do rodapé */
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.grupo::before {
+    content: '';
+    position: absolute;
+    top: 135%;
+    right: 55px;
+    height: 1px;
+    width: 10%;
+    background-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255); /* Cor do HR (pode ser ajustada conforme necessário) */
+}
+
+.grupo h3{
+    margin-bottom: 20px;
+}
+
+.grupo a{
+/* margin: 2px; */
+text-decoration: none;
+color: white;
+}
